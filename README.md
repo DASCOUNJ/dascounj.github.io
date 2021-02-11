@@ -15,9 +15,10 @@ Rencana halaman yang ada :
 
 ### Library
 
-Rencana library yang akan digunakan :
+Rencana library yang akan digunakan
 
 1. Bootstrap
 2. JQuery
+3. React (kalo bisa)
 
 © Copyright 2020, DASCO developers
