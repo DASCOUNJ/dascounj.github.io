@@ -18,7 +18,6 @@ Rencana halaman yang ada :
 Rencana library yang akan digunakan
 
 1. Bootstrap
-2. JQuery
-3. React (kalo bisa)
+2. Vue
 
 © Copyright 2020, DASCO developers
