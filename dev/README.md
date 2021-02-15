@@ -1,3 +1,12 @@
+# Dev
+
+Under development
+
+To Do:
+
+1. Landing page & About Page
+2. Firebase integration
+
 ## Project setup
 ```
 npm install

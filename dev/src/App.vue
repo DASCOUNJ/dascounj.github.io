@@ -9,23 +9,49 @@
         <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <router-link class="nav-link" to="/"><span class="fa fa-home fa-fw"></span>Home</router-link>
+              <router-link :class="getClassNav('Home')" to="/"><span class="fa fa-home fa-fw"></span>Home</router-link>
             </li>
             <li class="nav-item">
-              <router-link class="nav-link" to="/about"><span class="fa fa-info fa-fw"></span>About</router-link>
+              <router-link :class="getClassNav('About')" to="/about"><span class="fa fa-info fa-fw"></span>About</router-link>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <router-view class="container" />
+
+    <router-view />
+
+    <div class="bg-dark text-light" >
+      <div class="text-center p-3">
+        © 2021, Dasco UNJ
+      </div>
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    getClassNav(name){
+      if(name === this.$router.currentRoute.name){
+        return 'nav-link active';
+      }else
+        return 'nav-link';
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
 #app {
+  position: relative;
   font-family: "Roboto", sans-serif;
   width: 100%;
   height: 100%;
