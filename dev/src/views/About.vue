@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <div class="wrapper">
+    <div class="wrapper-img">
         <h2 class="text">Under development</h2>
         <img src="../assets/on-development.gif" alt="On Development" class="image">
     </div>
@@ -19,14 +19,14 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .about{
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  .wrapper{
+  .wrapper-img{
     max-width: 700px;
 
     img{
