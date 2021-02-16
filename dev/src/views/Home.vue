@@ -8,11 +8,14 @@
 
     <div class="wrapper-banner bg-dark">
       <div class="container">
-        <div class="text-light">
-          <h2>Open Recruitment</h2>
-          <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et veritatis molestiae eius ipsum. Corrupti non veniam, reiciendis velit blanditiis, harum minima dicta nemo, tempora eaque eius error est eveniet.</p>
+        <div class="row vertical">
+          <div class="col-lg text-light">
+            <h2>Open Recruitment</h2>
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et veritatis molestiae eius ipsum. Corrupti non veniam, reiciendis velit blanditiis, harum minima dicta nemo, tempora eaque eius error est eveniet.</p>
+            <a v-bind:href="baseURL + '/pendaftaran'" class="btn btn-light">Join Dasco</a>
+          </div>
+          <img src="../assets/Banner.jpeg" class="col mx-auto d-block" alt="banner">
         </div>
-        <img src="../assets/Banner.jpeg" class="banner" alt="banner">
       </div>
     </div>
 
@@ -27,7 +30,11 @@
 export default {
   name: "Home",
   components: {},
-  created () {
+  data(){
+    return {
+      baseURL: "https://dascounj.github.io"
+    }
+  },created () {
     document.title = "DASCO";
   }
 };
@@ -69,12 +76,21 @@ export default {
 
 .wrapper-banner{
   position: relative;
+  padding: 20px 0;
   width: 100%;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  .vertical{
+    display: flex;
+    align-items: center;
+  }
+
+  .col-lg, .col{
+    margin: 10px 0;
+
+    h2{
+      margin-bottom: 15px;
+    }
+  }
 
   img{
     object-fit: cover;
