@@ -6,15 +6,34 @@
       <img class="logo" alt="logo" src="../assets/logo dasco.png" />
     </div>
 
-    <div class="wrapper-banner bg-dark">
+    <div class="wrapper-brief bg-dark">
       <div class="container">
         <div class="row vertical">
+          <img src="../assets/logo dasco.jpg" class="col-m mx-auto d-block" alt="banner">
           <div class="col-lg text-light">
-            <h2>Open Recruitment</h2>
-            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et veritatis molestiae eius ipsum. Corrupti non veniam, reiciendis velit blanditiis, harum minima dicta nemo, tempora eaque eius error est eveniet.</p>
-            <a v-bind:href="baseURL + '/pendaftaran'" class="btn btn-light">Join Dasco</a>
+            <h2>DASCO</h2>
+            <p style="text-align: justify;">
+              DASCO UNJ adalah kelompok studi data science di UNJ yang membantu kamu dalam mempersiapkan diri untuk mulai berkarir sebagai 
+              Data Scientist. DASCO menyediakan tempat untuk kamu bisa belajar, berdiskusi, dan sharing - sharing tentang data science 
+              secara fun, aplikatif, dan praktis.
+            </p>
           </div>
-          <img src="../assets/Banner.jpeg" class="col mx-auto d-block" alt="banner">
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper-banner bg-light">
+      <div class="container">
+        <div class="row vertical">
+          <div class="col-lg text-dark">
+            <h2>Open Recruitment</h2>
+            <p style="text-align: justify;">
+              Kamu mahasiswa Statistika FMIPA UNJ, tertarik dengan dunia <span class="fw-bold">Data Science</span> namun ragu dan perlu
+              teman dan tempat untuk berdiskusi? Yuk join <span class="fw-bold">DASCO</span> 
+            </p>
+            <a v-bind:href="baseURL + '/pendaftaran'" class="btn btn-dark">Join Dasco</a>
+          </div>
+          <img src="../assets/Banner.jpeg" class="col mx-auto d-block tada" alt="banner">
         </div>
       </div>
     </div>
@@ -74,6 +93,31 @@ export default {
   }
 }
 
+.wrapper-brief{
+  position: relative;
+  padding: 20px 0;
+  width: 100%;
+
+  .vertical{
+    display: flex;
+    align-items: center;
+  }
+
+  .col-lg, .col-m{
+    margin: 10px 0;
+
+    h2{
+      margin-bottom: 15px;
+    }
+  }
+
+  img{
+    object-fit: cover;
+    max-width: 200px;
+    border-radius: 2rem;
+  }
+}
+
 .wrapper-banner{
   position: relative;
   padding: 20px 0;
@@ -96,12 +140,7 @@ export default {
     object-fit: cover;
     height: 200px;
     max-width: 500px;
-    border-radius: 20px;
+    border-radius: 1.5rem;
   }
-}
-
-.last-content{
-  width: 100%;
-  height: 400px;
 }
 </style>
