@@ -35,11 +35,19 @@
           </div>
           <img src="../assets/Banner.jpeg" class="col mx-auto d-block tada" alt="banner">
         </div>
+        <div class="row">
+          <figure class="col quote-wrapper text-center">
+            <blockquote class="blockquote-sm">
+              <p>"<span class="fw-bold">#MulaiAjaDulu</span>, kalau kamu gak memulai maka kamu tidak akan berada disana."</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              <cite title="Source Title">Nadiem Makariem</cite>
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </div>
 
-    <div class="last-content bg-light">
-    </div>
   </div>
 </template>
 
@@ -120,7 +128,7 @@ export default {
 
 .wrapper-banner{
   position: relative;
-  padding: 20px 0;
+  padding: 10px 0;
   width: 100%;
 
   .vertical{
@@ -141,6 +149,10 @@ export default {
     height: 200px;
     max-width: 500px;
     border-radius: 1.5rem;
+  }
+
+  .quote-wrapper{
+    margin-bottom: 0;
   }
 }
 </style>
