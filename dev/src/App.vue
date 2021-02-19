@@ -14,6 +14,9 @@
             <li class="nav-item">
               <router-link :class="getClassNav('About')" to="/about"><span class="fa fa-info fa-fw"></span>About</router-link>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/DASCOUNJ"><span class="fa fa-github fa-fw"></span>Github</a>
+            </li>
           </ul>
         </div>
       </div>

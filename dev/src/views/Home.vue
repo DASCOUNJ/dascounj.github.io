@@ -25,15 +25,16 @@
     <div class="wrapper-banner bg-light">
       <div class="container">
         <div class="row vertical">
-          <div class="col-lg text-dark">
-            <h2>Open Recruitment</h2>
+          <div class="col mx-auto d-block">
+            <Contact />
+            <!-- <h2>Open Recruitment</h2>
             <p style="text-align: justify;">
               Kamu mahasiswa Statistika FMIPA UNJ, tertarik dengan dunia <span class="fw-bold">Data Science</span> namun ragu dan perlu
               teman dan tempat untuk berdiskusi? Yuk join <span class="fw-bold">DASCO</span> 
             </p>
-            <a v-bind:href="baseURL + '/pendaftaran'" class="btn btn-dark">Join Dasco</a>
+            <a v-bind:href="baseURL + '/pendaftaran'" class="btn btn-dark">Join Dasco</a> -->
           </div>
-          <img src="../assets/Banner.jpeg" class="col mx-auto d-block tada" alt="banner">
+          <!-- <img src="../assets/Banner.jpeg" class="col mx-auto d-block tada" alt="banner"> -->
         </div>
         <div class="row">
           <figure class="col quote-wrapper text-center">
@@ -47,17 +48,18 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import Contact from "@/components/Contact.vue";
 
 export default {
   name: "Home",
-  components: {},
-  data(){
+  components: {
+    Contact
+  },data(){
     return {
       baseURL: "https://dascounj.github.io"
     }
