@@ -9,7 +9,7 @@
       <div class="pemberitahuan" style="display: none;">
         <div class="text">
           <div :class="`title ${cond == 'success' ? 'text-success' : 'text-danger'}`"><span :class="`fa fa-${cond == 'success' ? 'check' : 'close'} fa-fw`"></span> {{alert}}</div>
-          <p class="info" v-if="cond === 'success'">{{info}}</p>
+          <p class="info">{{info}}</p>
         </div>
       </div>
       <div class="col-sm-5 align-self-center">
@@ -77,7 +77,7 @@ export default {
           var vm = this;
           vm.cond = 'danger';
           vm.alert = 'Gagal';
-          vm.info = 'Pesan anda tidak terkirim';
+          vm.info = 'Pesan anda gagal terkirim';
           console.log(error);
         }).then(() => {
           this.show_alert();
@@ -107,7 +107,8 @@ export default {
       left: 0;
       height: 100%;
       width: 100%;
-      background-color: rgba(255,255,255, 0.7);
+      background-color: rgba(255,255,255, 0.8);
+      border-radius: 20px;
 
       .text{
         height: 100%;
@@ -123,7 +124,7 @@ export default {
 
         .info{
           font-size: 20px;
-          text-align: justify;
+          text-align: center;
         }
       }
     }

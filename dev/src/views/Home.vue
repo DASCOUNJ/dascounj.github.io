@@ -14,8 +14,8 @@
             <h2>DASCO</h2>
             <p style="text-align: justify;">
               DASCO UNJ adalah kelompok studi data science di UNJ yang membantu kamu dalam mempersiapkan diri untuk mulai berkarir sebagai 
-              Data Scientist. DASCO menyediakan tempat untuk kamu bisa belajar, berdiskusi, dan sharing - sharing tentang data science 
-              secara fun, aplikatif, dan praktis.
+              Data Scientist. DASCO menyediakan tempat untuk mahasiswa statistika Universitas Negeri Jakarta bisa belajar, berdiskusi, dan 
+              sharing - sharing tentang data science secara fun, aplikatif, dan praktis.
             </p>
           </div>
         </div>
@@ -27,14 +27,7 @@
         <div class="row vertical">
           <div class="col mx-auto d-block">
             <Contact />
-            <!-- <h2>Open Recruitment</h2>
-            <p style="text-align: justify;">
-              Kamu mahasiswa Statistika FMIPA UNJ, tertarik dengan dunia <span class="fw-bold">Data Science</span> namun ragu dan perlu
-              teman dan tempat untuk berdiskusi? Yuk join <span class="fw-bold">DASCO</span> 
-            </p>
-            <a v-bind:href="baseURL + '/pendaftaran'" class="btn btn-dark">Join Dasco</a> -->
           </div>
-          <!-- <img src="../assets/Banner.jpeg" class="col mx-auto d-block tada" alt="banner"> -->
         </div>
         <div class="row">
           <figure class="col quote-wrapper text-center">
