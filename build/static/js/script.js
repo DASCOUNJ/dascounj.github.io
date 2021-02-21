@@ -1,1 +1,0 @@
-console.log("Data Science Community - Universitas Negeri Jakarta")
