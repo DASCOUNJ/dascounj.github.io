@@ -8,7 +8,13 @@
     <div class="row content justify-content-center">
       <div class="pemberitahuan" style="display: none;">
         <div class="text">
-          <div :class="`title ${cond == 'success' ? 'text-success' : 'text-danger'}`"><span :class="`fa fa-${cond == 'success' ? 'check' : 'close'} fa-fw`"></span> {{alert}}</div>
+          <div v-if="alert === ''" class="spinner-border text-dark" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div v-else :class="`title ${cond == 'success' ? 'text-success' : 'text-danger'}`">
+            <span :class="`fa fa-${cond == 'success' ? 'check' : 'close'} fa-fw`"></span>
+            {{alert}}
+          </div>
           <p class="info">{{info}}</p>
         </div>
       </div>
@@ -62,12 +68,16 @@ export default {
   methods: {
     show_alert(){
       const alert_ = document.querySelector('.pemberitahuan');
-      alert_.style.display = 'block';
       setTimeout(() => { 
         alert_.style.display = 'none';
+        this.alert = '';
+        this.info = '';
       }, 3000);
     },
     sendEmail(e) {
+      const alert_ = document.querySelector('.pemberitahuan');
+      alert_.style.display = 'block';
+
       emailjs.sendForm('service_jtl7n6j', 'template_wupyt4e', e.target, 'user_wQPrq7qQmAjwrddaXRAFO')
         .then(() => {
           var vm = this;
