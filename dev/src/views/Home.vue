@@ -9,7 +9,7 @@
     <div class="wrapper-brief bg-dark">
       <div class="container">
         <div class="row vertical">
-          <img src="../assets/logo dasco.jpg" class="col-m mx-auto d-block" alt="banner">
+          <img src="../assets/logo dasco.jpg" class="col-m mx-auto d-block" alt="banner" />
           <div class="col-lg text-light">
             <h2>DASCO</h2>
             <p style="text-align: justify;">
