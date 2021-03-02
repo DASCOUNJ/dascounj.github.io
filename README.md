@@ -10,14 +10,16 @@ Sedang dalam masa pengembangan.
 
 Rencana halaman yang ada :
 
-1. Landing Page
+1. Landing Page :heavy_check_mark:
 2. About Page
 
 ### Library
 
-Rencana library yang akan digunakan
+Library yang akan digunakan
 
 1. Bootstrap
 2. Vue
+3. Font Awesome
+4. EmailJS
 
 © Copyright 2020, DASCO developers

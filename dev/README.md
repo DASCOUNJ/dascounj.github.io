@@ -4,8 +4,9 @@ Under development
 
 To Do:
 
-1. Landing page & About Page
+1. About Page
 2. Firebase integration
+3. Font Awesome via NPM
 
 ## Project setup
 ```
