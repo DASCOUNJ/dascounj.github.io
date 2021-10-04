@@ -1,31 +1,39 @@
 {
-  "name": "DASCO",
-  "version": "0.1.0",
+  "name": "gatsby-starter-hello-world",
   "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
+  "license": "0BSD",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "emailjs-com": "^2.6.4",
-    "vue": "^2.6.11",
-    "vue-router": "^3.2.0"
+    "emailjs-com": "^3.2.0",
+    "gatsby": "^3.13.1",
+    "gatsby-plugin-google-gtag": "^3.14.0",
+    "gatsby-plugin-manifest": "^3.14.0",
+    "gatsby-plugin-react-helmet": "^4.14.0",
+    "gatsby-plugin-sass": "^4.14.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "sass": "^1.42.1"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/eslint-config-prettier": "^6.0.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-prettier": "^3.1.3",
-    "eslint-plugin-vue": "^6.2.2",
-    "prettier": "^1.19.1",
-    "sass": "^1.26.5",
-    "sass-loader": "^8.0.2",
-    "vue-template-compiler": "^2.6.11"
+    "gatsby-plugin-root-import": "^2.0.7",
+    "prettier": "2.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
