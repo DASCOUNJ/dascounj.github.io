@@ -18,8 +18,7 @@ Rencana halaman yang ada :
 Library yang akan digunakan
 
 1. Bootstrap
-2. Vue
-3. Font Awesome
-4. EmailJS
+2. Gatsby & React
+3. EmailJS
 
 © Copyright 2020, DASCO developers
