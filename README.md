@@ -17,7 +17,7 @@ Rencana halaman yang ada :
 
 Library yang akan digunakan
 
-1. Bootstrap
+1. Bootstrap 5
 2. Gatsby & React
 3. EmailJS
 

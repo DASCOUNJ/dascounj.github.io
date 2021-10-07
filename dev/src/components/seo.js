@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
@@ -82,10 +82,6 @@ const Seo = ({ description, lang, meta, title }) => {
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossOrigin="anonymous"
       ></script>
-      {/* <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      /> */}
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
@@ -98,7 +94,7 @@ const Seo = ({ description, lang, meta, title }) => {
 };
 
 Seo.defaultProps = {
-  lang: `en`,
+  lang: `id`,
   meta: [],
   description: ``,
 };

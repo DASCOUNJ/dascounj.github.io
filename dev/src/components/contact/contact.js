@@ -13,7 +13,7 @@ const Contact = () => {
     pemberitahuan.current.style.display = "block";
 
     emailjs
-      .sendForm("service_bik7vme", "template_wupyt4e", e.target, "user_wQPrq7qQmAjwrddaXRAFO")
+      .sendForm("service_1mi8xy1", "template_wupyt4e", e.target, "user_wQPrq7qQmAjwrddaXRAFO")
       .then(
         result => {
           setAlert("Berhasil");
@@ -23,6 +23,7 @@ const Contact = () => {
           setCondition("danger");
           setAlert("Gagal");
           setInfo("Pesan anda gagal terkirim");
+          console.log(error);
         }
       )
       .then(() => {
